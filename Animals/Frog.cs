@@ -15,12 +15,7 @@ namespace ZooKeeper.Animals
 
         public override void Movement()
         {
-            Console.WriteLine("hops and swims");
+            Console.WriteLine("by hop and swiming");
         }
-
-        //public override string ToString()
-        //{
-        //    return $"Frog (Age={_age},Colour={_color})";
-        //}
     }
 }

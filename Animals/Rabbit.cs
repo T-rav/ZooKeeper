@@ -15,7 +15,7 @@ namespace ZooKeeper.Animals
 
         public override void Movement()
         {
-            Console.WriteLine("hops");
+            Console.WriteLine("by hoping");
         }
     }
 }

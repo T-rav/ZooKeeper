@@ -26,9 +26,23 @@ namespace ZooKeeper
 
                 var animalDetails = GetAnimalDetails();
                 var animal = CreateAnimal(menuItem, animalDetails);
+                animals.Add(animal);
 
                 PrintNewAnimalDetails(animal);
+
+                PrintWhoIsInZoo(animals);
             }
+        }
+
+        private static void PrintWhoIsInZoo(List<Critter> animals)
+        {
+            Console.WriteLine("The zoo now contains:");
+            foreach (var zooAnimal in animals)
+            {
+                Console.WriteLine(zooAnimal.ToString());
+            }
+
+            Console.WriteLine("");
         }
 
         private static void ExitApplication()
